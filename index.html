@@ -18,39 +18,68 @@
     Efter att ett informativt meddelande skickats ut får sedan mobiler inom utvalda områden en gång om dagen frågan <b>Hur mår du?</b> via sms.
   </p>
 
-  <h2>Demo</h2>
-  <form action="">
-    <input type="tel" placeholder="Enter your phone number">
-    <button>Start demo</button>
-  </form>
+  <h2 id="demo">Demo</h2>
+  <p>
+    Send "start" to <b>+46 766 86 46 46</b> to initate a demo.
+  </p>
 
   <h2>Integritet</h2>
   <p>Integritet är mycket viktigt. Du kan välja att låta bli att svara. Du kan välja att svara väldigt begränsat.</p>
-  <p>Systemet bakom status46 sparar inte mobilnummer alls, men all sms-trafik sparas i operatörernas loggar, så där kommer hela befolkningens svar att finnas.</p>
-  <p>En fundering - blir listan över nummer som inte svarat då en lista över personer som är känslia för övervakning?</p>
+  <p>Systemet bakom status46 sparar inte mobilnummer alls, men all sms-trafik sparas i operatörernas loggar.</p>
+
+  <h2>Data</h2>
+  <p>Data kommer tillgängliggöras på <a href="/data">status46.se/data</a>.</p>
 
   <h2>Vanliga frågor</h2>
   <h3>Hur kan ni skicka mig svar om ni inte sparar mitt mobilnummer?</h3>
   <p>Vi kan ställa en följdfråga när ett sms kommer in kan vi titta på innehållet och välja att ställa en följdfråga "med vändande post".</p>
 
+  <h2>Risker</h2>
+  <p>Blir listan över nummer som inte svarat då en lista över personer som är känslia för övervakning?</p>
+
+  <h2>Nästa steg</h2>
+  <p>Testa på att göra ett utskick i ett utvalt område och se hur det går.</p>
+
+  <h3>Fler möjligheter</h3>
+  <ul>
+    <li>Sprida numret och låta folk skicka in svar utan att ha fått frågan via massutskick.</li>
+    <li>Testa på att skicka ut frågan till listor med nummer tillsammans med frivilligorganisationer.</li>
+  </ul>
+
 
   <h2>Detaljer</h2>
-  <p>Byggt av Victoria Wagman som jobbar som utvecklare på <a href="https://46elks.com">46elks</a>.</p>
-  <p>Tack till alla som givit mig feedback under Hack the Crisis.<br>
-  Extra mycket tack till Anders!</p>
-  <p>Hemsidans design nästan helt och hållet inspirerad av <a href="https://klimathack.se">klimathack</a>.</p>
-  <p><b>**</b> Han ska ha sagt något liknande, jag hittar inte artikeln där jag läste det just nu.</p>
+  <ul>
+    <li>Byggt av <a href="https://victoriawagman.se">Victoria</a> som jobbar som utvecklare på <a href="https://46elks.com">46elks</a>.</li>
+    <li>Hemsidans design nästan helt och hållet inspirerad av <a href="https://klimathack.se">klimathack</a>.</li>
+  </ul>
+
+
+  <h2>Tack!</h2>
+  <p>
+    Tack till alla som givit mig feedback under Hack the Crisis.<br>
+    Extra mycket tack till Anders!
+  </p>
+
+  <br><br>
+  <h2>**</h2>
+  <p>Han ska ha sagt något liknande, jag hittar inte artikeln där jag läste det just nu.</p>
 
   <style>
     body  { max-width: 620px; margin: 13vh auto 3rem; font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; background: #209cee; color: #fff;}
     h1    { margin-bottom: 12px; }
-    h2    { margin: 3rem 0 3px; }
+    h2    { margin: 3.3rem 0 3px; }
     h3    { margin: 1rem 0 3px; }
     p     { margin-top: 2px; font-size: 1.25rem; line-height: 1.5;}
     a     { color: #fff; }
-    input { padding: 5px 3px; border-radius: 3px; border: 1px solid #209cee;}
+    ul    { padding-bottom: 2rem; }
+    li    { font-size: 1.3rem; margin-bottom: 9px;}
+    input { padding: 5px 9px; border-radius: 2px; border: 1px solid #209cee; font-size: 1.5rem}
     blockquote { font-size: 2rem; margin: 0 0 calc(2rem + 10vh); padding: 0 1rem; font-style: italic; }
     blockquote footer { font-size: 1.2rem; margin-top: 5px; font-weight: 600; font-style: normal; }
+    #demo { font-size: 300%; }
+    #demo + p   { padding-bottom: 2rem; }
+    #demo + p b { font-size: 130%; }
+    .details { padding: 0 2rem 1rem; }
   </style>
 </body>
 </html>
