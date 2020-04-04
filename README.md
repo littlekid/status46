@@ -8,13 +8,16 @@ People can answer with just one word like good, bad, cold, fever or give a more 
 Option: Automated phone calls. Just like when explosives will be used in an area and you can get an automated phone call informing you of this. "Press 1 to confirm you've received this information, Press 2 if you want to talk to someone". These calls could be: Hej! With the current Corona-crisis we're asking all citizens in this area with many infected if you're willing to start reporting any symptoms, to enable live updates to the situation... 
 
 TODOs:
-- [ ] landingpage 
-- [ ] create a demo
-  - [ ] setup a number
-  - [ ] create conditions for how to interpret replies
-  - [ ] setup different flows of what happens next depending on what the reply is
+- [x] landingpage 
+- [ ] create a video explaining the solution
+- [x] create a demo
+  - [x] setup a number
+  - [x] setup different flows of what happens next depending on what the reply is
+
+- [ ] refine demo
   - [ ] show examples of how replies can be agregated and visualized
-  - [ ] create a video explaining this
+  - [ ] create conditions for how to interpret replies
 - [ ] handle integrity issues
+- [ ] mobilanpassa info-sidan
 
 Detail: An option would be that people go to status46.se and fill out their phonenumber to start receiving questions each day, but then that would require lots of work on communicating the existance of this setup.
