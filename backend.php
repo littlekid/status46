@@ -55,7 +55,7 @@ if(strtolower($message) != 'start' && $message != '?' && $message !='demo') {
   // Open the file to get existing content
   $current = file_get_contents($file);
   // Append a new person to the file
-  $current .= $message."\n";
+  $current .= date("Y-m-d").", ".$message."\n";
   // Write the contents back to the file
   file_put_contents($file, $current);
 }
