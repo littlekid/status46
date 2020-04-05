@@ -1,7 +1,12 @@
 <?php
 
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
 if ( isset($_POST) ){
-  if ($_POST['message'] == 'start'){
+  $message = $_POST['message'];
+  if (strtolower($_POST['message']) == 'start'){
     echo "Hej!
 
 Detta meddelande skickas ut till alla mobiltelefoner i det område där du befinner dig just nu.\n
@@ -18,12 +23,42 @@ Du kan också ringa detta nummer, då kommer du till Corona-linjen där du kan f
 Tack på förhand,
 Folkhälsomyndigheten\n
 
-(Obs! Det här är ett DEMO av ett HacktheCrisis-projekt!)
-
-    ";
+(Obs! Det här är ett DEMO av ett HacktheCrisis-projekt!)";
+  } else if ($message == '?') {
+    echo "Mer info på http://status46.victoriawagman.se";
+  } else if ($message == 'demo') {
+    echo "Hur mår du?";
+  } else {
+    echo "Tack för att du delar med dig av hur du mår.";
   }
+
+//$file =fopen('/storage/content/83/170983/status46.victoriawagman.se/public_html/responses.log', 'w');
+//fwrite($file, '1');
+//fwrite($file, '23');
+//fwrite($file, "\n");
+//fclose($file);
+//$current = file_get_contents($file);
+
+
+
+// $file = '/storage/content/83/170983/status46.victoriawagman.se/public_html/responses.log';
+// $current = file_get_contents($file);
+// echo $current;
+// // Append a new person to the file
+// // Write the contents back to the file
+// file_put_contents($file, $message."\n");
 }
 
+
+if(strtolower($message) != 'start' && $message != '?' && $message !='demo') {
+  $file = 'incomingreports.log';
+  // Open the file to get existing content
+  $current = file_get_contents($file);
+  // Append a new person to the file
+  $current .= $message."\n";
+  // Write the contents back to the file
+  file_put_contents($file, $current);
+}
 
 
 function string_contains($string, $needle){
