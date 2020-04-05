@@ -1,5 +1,8 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteRule ^data-web/?$ data.php 
-RewriteRule ^data/?$ data-raw.php 
-RewriteRule ^backend/?$ backend.php 
+RewriteRule ^data-web/?$ data.php
+RewriteRule ^data/?$ data-raw.php
+RewriteRule ^backend/?$ backend.php
+RewriteRule ^english/?$ english.html
+RewriteRule ^engelska/?$ english.html
+RewriteRule ^eng/?$ english.html
